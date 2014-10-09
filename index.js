@@ -22,6 +22,8 @@ function Concat(inputTree, options) {
 
   this.cache = {}
   this.cachedConcatenatedOutputHash = null
+  
+  this.broccoli = { brocfileLocation: new Error().stack }
 }
 
 Concat.prototype.DEFAULT_SEPARATOR = '\n'
